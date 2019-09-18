@@ -3,14 +3,18 @@
     padding:0;
 }
 
+/*Body*/
+
 body{
     background-color:black;
     font-family:Helvetica, sans-serif;
-    font-size: 22px;
+    font-size: 20px;
+    opacity:1;
     color:seashell;
-    opacity:0.9;
     text-align: center;
 }
+
+/* Header */
 
 .header-nav{
     display:flex;
@@ -19,6 +23,7 @@ body{
     position:sticky;
     top:0;
     border-bottom: 1px solid seashell;
+    background-color:black;
 
 }
 
@@ -53,11 +58,14 @@ body{
 }
 
 
+/* Font-page */
+
 .front-page{
     height:700px;
-    width:1200px;
+    width:90vw;
     background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-mission-background.jpg");
     background-size: cover;
+    background-position:center;
     display:flex;
     align-items:center;
     margin:0 auto;
@@ -72,6 +80,118 @@ body{
     padding:20px;
 }
 
+
+/* Products */
+
+.products-grid{
+    display:inline-flex;
+    flex-direction:column;
+    justify-content:center;
+    height:auto;
+    width:80vw;
+    margin:50px;
+}
+
+.title-products{
+    padding:30px;
+}
+
+.title-products h2{
+    padding:20px;
+}
+
+.list-products{
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    flex-wrap:wrap;
+    width:100%;
+}
+
+.item img{
+    width:300px;
+    height:200px;
+    padding:10px;
+}
+
+.item p{
+    padding:10px;
+}
+
+
+/* Locations */
+
+.locations{
+    display:flex;
+    flex-direction:column;
+    justify-content:space-around;
+    align-items: center;
+    background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-locations-background.jpg");
+    background-size:100% 120%;
+    width:90%;
+    height: 500px;
+    margin:0 auto;
+}
+
+.locations div{
+    overflow: scroll;
+}
+
+.locations h2{
+    padding:20px;
+}
+
+
+.box-places{
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    flex-wrap:wrap;
+}
+
+.place{
+    display:inline-flex;
+    flex-direction:column;
+    justify-content:space-around;
+
+    background-color:black;
+    width:300px;
+    height:300px;
+    margin:15px 20px;
+    opacity:1;
+}
+
+/* Footer */
+
+.footer{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+
+}
+
+.footer div{
+    display:flex;
+    flex-direction:column;
+    height:200px;
+    width:auto;
+    justify-content:space-around;
+}
+
+.footer p{
+    display:flex;
+    align-self:flex-end;
+    font-size:0.8em;
+    margin-bottom:20px;
+    margin-right:50px;
+}
+
+@media screen and (max-width:900px){
+    .navbar li{
+        font-size:16px;
+    }
+
+}
 
 
 
